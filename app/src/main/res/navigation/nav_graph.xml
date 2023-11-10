@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph">
+    app:startDestination="@id/m_1">
+
+<fragment
+    android:id="@+id/m_1"
+    android:name="m_1"
+    android:label="m_1"
+    tools:layout="@layout/fragment_m1">
+
+
+
+
+</fragment>
+
+<fragment
+    android:id="@+id/m_2"
+    android:name="m_2"
+    android:label="m_2"
+    tools:layout="@layout/fragment_m2" />
+
+    <fragment
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+</navigation>
+
